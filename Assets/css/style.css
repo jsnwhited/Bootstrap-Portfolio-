@@ -1,0 +1,344 @@
+/* 
+
+Nav Bar 
+.navbar-brand {
+    font-family: 'Rock Salt';
+    font-size: 2vw;
+}
+
+.menu-item {
+    font-family: 'Rock Salt';
+    font-size:1vw;
+}
+
+/* body */
+/* 
+.main { 
+    background-image: url(assets/images/white-waves.png)
+} */ 
+
+
+:root {
+    /* Define color scheme */
+    --color-light-theme   : #ffffff;
+    --color-dark-theme    : #666666;
+    --color-mint-green    : #4aaaa5;
+    --color-separator     : #d8d8d8;
+    --color-text          : #202020;
+    --color-text-highlight: #ff6600;
+}
+
+body {
+    background-image : url("../images/white-waves.png");
+    background-repeat: repeat;
+    font-family      : "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+    font-size        : 17px;
+}
+
+h1, h2 {
+    color         : var(--color-mint-green);
+    font-family   : "Georgia", "Times", "Times New Roman", serif;
+    font-weight   : bold;
+    letter-spacing: 0.015em;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+p {
+    line-height   : 1.8em;
+    
+    padding-bottom: 1.2em;
+}
+
+p strong, label strong {
+    color      : var(--color-text-highlight);
+    font-weight: bold;
+}
+
+figcaption strong {
+    font-weight: bold;
+}
+
+
+/* All things related to top pane */
+#top_pane {
+    background-color: var(--color-light-theme);
+}
+
+.navbar-brand {
+    background-color: var(--color-mint-green) !important;
+    color           : var(--color-light-theme) !important;
+    font-family     : "Georgia", "Times", "Times New Roman", serif;
+    font-size       : 1.9em;
+    font-weight     : bold;
+    letter-spacing  : 0.02em;
+    
+    padding         : 32px 40px 56px 40px !important;
+}
+
+.navbar-nav, .navbar-right {
+    font-size: 1.3em;
+
+    padding  : 20px 30px 20px 30px !important;
+}
+
+.navbar-right {
+    padding-right: 12.5px !important;
+}
+
+
+/* All things related to the middle pane */
+#middle_pane {
+    margin-top    : 120px !important;
+    padding-top   : 50px !important;
+    padding-bottom: 70px !important;
+}
+
+#middle_pane a, #bottom_pane a {
+    text-decoration: underline;
+
+    position       : static !important;
+    top            : 0 !important;
+}
+
+.left_pane, .right_pane {
+    background-color: var(--color-light-theme);
+    box-shadow      : 0 3px  6px 4px rgba(0, 0, 0, 0.12),
+                      0 4px 14px 6px rgba(0, 0, 0, 0.07);
+}
+
+.left_pane:hover, .right_pane:hover {
+    box-shadow: 0 4px  8px  6px rgba(250, 242, 203, 0.60),
+                0 6px 20px 10px rgba(250, 242, 203, 0.52);
+}
+
+
+/* Begin: index.html */
+/* End: index.html */
+
+
+/* Begin: portfolio.html */
+.left_pane .portfolio {
+    position     : relative; /* For figcaption (position: absolute) */
+    margin-bottom: 20% !important;
+}
+
+.left_pane .portfolio img {
+    border: 2px solid var(--color-separator);
+}
+
+.left_pane .portfolio figcaption {
+    background-color: var(--color-mint-green);
+    color           : var(--color-light-theme);
+    font-size       : 1.1em;
+    line-height     : 1.2em;
+    text-align      : center;
+
+    position        : absolute;
+    width           : 100%;
+    bottom          : 7.5%;
+    left            : 0;
+    padding         : 5.5%;
+}
+/* End: porfolio.html */
+
+
+/* Begin: contact.html */
+.left_pane label {
+    font-size    : 1.3em;
+    font-weight  : bold;
+
+    display      : block;
+    margin-bottom: 0.5em;
+}
+
+.left_pane input {
+    font-size    : 1.1em;
+    
+    display      : block;
+    margin-bottom: 0.5em;
+    padding      : 1em 0.5em 1em 0.75em;
+}
+
+.left_pane textarea {
+    font-family  : "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+    font-size    : 1.1em;
+
+    display      : block;
+    margin-bottom: 0.5em;
+    padding      : 0.5em 0.5em 0.5em 0.75em;
+}
+
+.left_pane #form_submit {
+    background-color: var(--color-mint-green);
+    color           : var(--color-light-theme);
+    font-size       : 1.3em;
+    font-weight     : bold;
+    text-align      : center;
+    
+    display         : block;
+    width           : 36%;
+    margin          : 8% 0 4% 0;
+    padding         : 1.5% 0;
+}
+/* End: contact.html */
+
+
+.right_pane img {
+    margin-left  : 20% !important;
+    margin-bottom: 30% !important;
+}
+
+.right_pane img:hover {
+    background-color: var(--color-separator);
+    opacity         : 0.65;
+}
+
+
+/* All things related to the bottom pane */
+#bottom_pane {
+    background-color: var(--color-dark-theme);
+    color           : var(--color-light-theme);
+    text-align      : center;
+    
+    border-top      : 15px solid var(--color-mint-green);
+    padding-top     : 40px;
+    padding-bottom  : 10px;
+}
+
+#bottom_pane a {
+    color: var(--color-light-theme);
+}
+
+
+
+/****************************************************************************
+ ****************************************************************************
+    
+    Stylesheet for desktop (reduced)
+    
+*****************************************************************************
+*****************************************************************************/
+@media all and (max-width: 1200px) and (min-width: 993px), all and (max-device-width: 1200px) and (min-device-width: 993px) {
+    :root {
+        --color-mint-green: #b9c149;
+    }
+}
+
+
+
+/****************************************************************************
+ ****************************************************************************
+    
+    Stylesheet for tablet
+    
+*****************************************************************************
+*****************************************************************************/
+@media all and (max-width: 992px) and (min-width: 769px), all and (max-device-width: 992px) and (min-device-width: 769px) {
+    :root {
+        --color-mint-green: #c81a4c;
+    }
+
+    .left_pane {
+        margin-bottom: 7% !important;
+    }
+
+    .left_pane:hover, .right_pane:hover {
+        box-shadow: 0 3px  6px 4px rgba(0, 0, 0, 0.12),
+                    0 4px 14px 6px rgba(0, 0, 0, 0.07);
+    }
+
+    .right_pane img:hover {
+        background-color: var(--color-light-theme);
+        opacity         : 1;
+    }
+}
+
+
+
+/****************************************************************************
+ ****************************************************************************
+    Stylesheet for mobile
+    
+*****************************************************************************
+*****************************************************************************/
+@media all and (max-width: 768px), all and (max-device-width: 768px) {
+    :root {
+        --color-mint-green: #7486cb;
+    }
+
+    body {
+        font-size: 14px;
+    }
+    
+    nav {
+        float: left;
+        width: 100%;
+    }
+
+    .navbar-fixed-top {
+        position    : relative;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-brand {
+        width: 100%;
+    }
+
+    #hamburger_menu {
+        background-color: var(--color-dark-theme);
+
+        position        : absolute;
+        top             : 0;
+        right           : 0;
+        border          : 1px solid var(--color-light-theme);
+    }
+
+    #hamburger_menu span {
+        background-color: var(--color-light-theme);
+    }
+    
+    #top_pane button {
+        margin-top: 18px;
+    }
+
+    #top_pane button .icon-bar {
+        margin: 6px 5px;
+    }
+    
+    #middle_pane {
+        position  : relative !important;
+        margin-top: 0 !important;
+        top       : 40px !important;
+    }
+
+    .left_pane {
+        margin-bottom: 7% !important;
+    }
+
+    .left_pane:hover, .right_pane:hover {
+        box-shadow: 0 3px  6px 4px rgba(0, 0, 0, 0.12),
+                    0 4px 14px 6px rgba(0, 0, 0, 0.07);
+    }
+
+    .right_pane img {
+        margin-left: 0 !important;
+    }
+
+    .right_pane img:hover {
+        background-color: var(--color-light-theme);
+        opacity         : 1;
+    }
+
+    #bottom_pane {
+        position: relative !important;
+        top     : 40px !important;
+    }
+}
+  
